@@ -1,0 +1,51 @@
+footer {
+    background: #2D92EF;
+    color: white;
+    padding: 0px 60px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: fit-content;
+    box-sizing: border-box;
+    width: 100%; 
+    }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 100px;
+  }
+  
+.rodape-logo img {
+  height: 120px;
+}
+
+
+  .footer-column h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .footer-column p,
+  .footer-column a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.6;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .social-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }

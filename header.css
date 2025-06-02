@@ -1,0 +1,41 @@
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 10;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 40px;
+    height: 100px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 70px;
+  }
+  
+  .menu a {
+    color: #565656;
+    text-decoration: none;
+    font-size: 28px;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #80CC2B;
+  }
+  
+  .menu a.ativo {
+    color: #80CC2B;
+  } 
+  body {
+  padding-top: 220px; /* um pouco mais que a altura do cabeçalho */
+}
