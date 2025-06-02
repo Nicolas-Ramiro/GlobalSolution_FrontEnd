@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  padding-top: 220px; /* para não cobrir pelo cabeçalho fixo */
+  padding-top: 100px; /* para não cobrir pelo cabeçalho fixo */
 }
 
 .conteudo-home {

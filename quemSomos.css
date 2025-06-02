@@ -1,13 +1,12 @@
 body {
-    position: relative;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-                url('fundo.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+              url('fundo.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 220px; /* para não cobrir pelo cabeçalho fixo */
 }
 
 main {
