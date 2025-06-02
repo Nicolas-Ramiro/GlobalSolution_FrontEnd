@@ -1,7 +1,7 @@
 footer {
     background: #2D92EF;
     color: white;
-    padding: 0px 60px;
+    padding: 20px 0;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,9 @@ footer {
     height: fit-content;
     box-sizing: border-box;
     width: 100%; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
     }
   
   .footer-column {
