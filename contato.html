@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resgate+ - Quem somos</title>
+        <title>Resgate+ - Home</title>
         <link rel="stylesheet" href="Header.css">
         <link rel="stylesheet" href="Footer.css">
-        <link rel="stylesheet" href="quemSomos.css">
+        <link rel="stylesheet" href="contato.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -15,38 +15,40 @@
             </div>
             <nav class="menu">
                 <a href="home.html">Home</a>
-                <a href="quemSomos.html" class="ativo">Quem Somos</a>
+                <a href="quemSomos.html">Quem Somos</a>
                 <a href="faq.html">Faq</a>
-                <a href="contato.html">Contato</a>
+                <a href="contato.html" class="ativo">Contato</a>
             </nav>
         </header>
-
+  
         <main>
-            <h1 class="title">FOUNDERS</h1>
-            <div class="founders">
-                <div class="founder">
-                    <img src="Hebert.png" alt="Hebert Lopes dos Santos" class="avatar">
-                    <p>Hebert Lopes dos Santos<br>RM: 563192<br>1TDSR</p>
-                    <a href="https://github.com/Hebertlps">GitHub</a><br>
-                    <a href="https://www.linkedin.com/in/hebert-lopes-36a3bb12a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Linkedin</a>
+            <div class="contato-container">
+                <div class="formulario">
+                    <h1 class="titulo-laranja">Deseja falar conosco?</h1>
+                    <p>Deixe uma mensagem no formulário abaixo!</p>
+                    <form id="contato-container">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="mensagem" placeholder="Como podemos te ajudar?" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
 
-                <div class="founder">
-                    <img src="Marcus.jpg" alt="Marcus Vinícius Vila Nova da Silva" class="avatar">
-                    <p>Marcus Vinícius Vila Nova da Silva<br>RM: 558771<br>1TDSR</p>
-                    <a href="https://github.com/marcusvilanova">GitHub</a><br>
-                    <a href="https://www.linkedin.com/in/marcus-vin%C3%ADcius-vila-nova-da-silva?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Linkedin</a>
-                </div>
-
-                <div class="founder">
-                    <img src="Nicolas.jpg" alt="Nicolas Monteiro Ramiro" class="avatar">
-                    <p>Nicolas Monteiro Ramiro<br>RM: 562380<br>1TDSR</p>
-                    <a href="https://github.com/Nicolas-Ramiro">GitHub</a><br>
-                    <a href="https://www.linkedin.com/in/nicolas-ramiro-4a44bb346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+                <div class="lado-direito">
+                    <div class="botoes-acoes">
+                        <button class="botao-verde" onclick="abrirPagina('vitima')">Sou vítima</button>
+                        <button class="botao-verde" onclick="abrirPagina('voluntario')">Quero Me Voluntariar</button>
+                        <button class="botao-verde" onclick="abrirPagina('doacao')">Faça uma doação</button>
+                    </div>
+                    <div class="informacoes">
+                        <h1 class="titulo-laranja">Entre em contato!</h1>
+                        <p><a href="mailto:resgatemais@gmail.com">resgatemais@gmail.com</a></p>
+                    </div>
                 </div>
             </div>
         </main>
-        
+        <script src="contato.js"></script>
+
         <footer>
             <div class="footer-column">
                 <div class="rodape-logo">
