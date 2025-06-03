@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resgate+ - Home</title>
+        <title>Resgate+ - Cadastro de vitima</title>
         <link rel="stylesheet" href="Header.css">
         <link rel="stylesheet" href="Footer.css">
-        <link rel="stylesheet" href="contato.css">
+        <link rel="stylesheet" href="cadastro-vitima.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -20,34 +20,29 @@
                 <a href="contato.html" class="ativo">Contato</a>
             </nav>
         </header>
-  
         <main>
-            <div class="contato-container">
-                <div class="formulario">
-                    <h1 class="titulo-laranja">Deseja falar conosco?</h1>
-                    <p>Deixe uma mensagem no formulário abaixo!</p>
-                    <form id="contato-container">
+            <div class="form-container">
+                <h1>Cadastro de vitima</h1>
+                <p>Faça seu cadastro</p>
+                <form id="form-vitima" class="form-grid">
+                    <div class="coluna-esquerda">
                         <input type="text" name="nome" placeholder="Nome" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="mensagem" placeholder="Como podemos te ajudar?" required></textarea>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="telefone" placeholder="Telefone" required>
+                        <input type="number" name="idade" placeholder="Idade" required>
+                        <input type="text" name="local" placeholder="Local" required>
+                    </div>
+                    <div class="coluna-direita">
+                        <input type="text" name="ajuda" placeholder="Tipo de ajuda que necessita" required>
+                        <input type="text" name="saude" placeholder="Estado de saúde" required>
+                        <input type="text" name="abrigo" placeholder="Abrigo designado" required>
+                        <input type="text" name="status" placeholder="Status do resgate" required>
                         <button type="submit">Enviar</button>
-                    </form>
-                </div>
-
-                <div class="lado-direito">
-                    <div class="botoes-acoes">
-                        <button class="botao-verde" onclick="abrirPagina('vitima')">Sou vítima</button>
-                        <button class="botao-verde" onclick="abrirPagina('voluntario')">Quero Me Voluntariar</button>
                     </div>
-                    <div class="informacoes">
-                        <h1 class="titulo-laranja">Entre em contato!</h1>
-                        <p><a href="mailto:resgatemais@gmail.com">resgatemais@gmail.com</a></p>
-                    </div>
-                </div>
+                </form>
             </div>
         </main>
-        <script src="contato.js"></script>
-
+        <script src="cadastro-vitima.js"></script>
         <footer>
             <div class="footer-column">
                 <div class="rodape-logo">

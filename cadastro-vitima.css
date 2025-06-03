@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+              url('fundo.png') no-repeat center center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding-top: 300px;
+  background-attachment: fixed;
+}
+
+.form-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #66cc00;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 40px;
+  color: #f0f0f0;
+}
+
+.form-grid {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  gap: 40px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #66cc00;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}

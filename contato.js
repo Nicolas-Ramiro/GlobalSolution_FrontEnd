@@ -22,8 +22,5 @@ document.addEventListener("DOMContentLoaded", function () {
             case "voluntario":
                 window.location.href = "cadastro-voluntario.html";
                 break;
-            case "doacao":
-                window.location.href = "cadastro-doacao.html";
-                break;
         }
     }
