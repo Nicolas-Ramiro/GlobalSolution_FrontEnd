@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+              url('fundo.png') no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0px;
+    background-attachment: fixed;
+    padding-top: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.formulario {
+  width: 30%;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #66cc00;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.calendario {
+  width: 45%;
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.dias, .datas {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.datas div {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.datas div.selecionado {
+  background-color: #66cc00;
+  color: white;
+}

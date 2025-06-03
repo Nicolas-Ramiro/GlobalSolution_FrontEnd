@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Mensagem:", mensagem);
         });
     }
-
-    // Navegação via DOM
-    document.getElementById("vitima").addEventListener("click", function () {
-        window.location.href = "cadastro-vitima.html";
-    });
-
-    document.getElementById("voluntario").addEventListener("click", function () {
-        window.location.href = "cadastro-voluntario.html";
-    });
-
-    document.getElementById("doacao").addEventListener("click", function () {
-        window.location.href = "cadastro-doacao.html";
-    });
 });
+    function abrirPagina(destino) {
+        switch (destino) {
+            case "vitima":
+                window.location.href = "cadastro-vitima.html";
+                break;
+            case "voluntario":
+                window.location.href = "cadastro-voluntario.html";
+                break;
+            case "doacao":
+                window.location.href = "cadastro-doacao.html";
+                break;
+        }
+    }
