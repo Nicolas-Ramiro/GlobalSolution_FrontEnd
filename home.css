@@ -6,27 +6,33 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  padding-top: 100px; /* para não cobrir pelo cabeçalho fixo */
+  padding-top: 200px;
 }
 
 .conteudo-home {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: calc(100vh - 220px); /* toda a altura visível, menos o header */
-  padding: 0 80px;
+  align-items: flex-start;
+  min-height: calc(100vh - 220px);
+  padding: 40px 5%;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .texto-esquerda {
   width: 50%;
   font-size: 20px;
   line-height: 1.6;
+  margin-bottom: 40px;
 }
 
 .texto-direita {
   width: 40%;
   text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
 
 .texto-direita h2 {
@@ -49,4 +55,144 @@ body {
 
 .texto-direita a:hover {
   background-color: #6bb123;
+}
+
+/* Responsividade */
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+  .conteudo-home {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5%;
+    text-align: center;
+    padding-top: 150px;
+    margin-left: 30px;
+  }
+  
+  .texto-esquerda,
+  .texto-direita {
+    width: 100%;
+  }
+  
+  .texto-esquerda {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .texto-direita h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  body {
+    padding-top: 80px;
+  }
+}
+
+/* Para telas entre 600px e 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  .body{
+    padding-top: 300px;
+  }
+  .conteudo-home {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 8%;
+    text-align: center;
+  }
+  
+  .texto-esquerda,
+  .texto-direita {
+    width: 100%;
+  }
+  
+  .texto-esquerda {
+    font-size: 18px;
+    margin-bottom: 35px;
+    text-align: justify;
+  }
+  
+  .texto-direita h2 {
+    font-size: 28px;
+  }
+}
+
+/* Para telas entre 768px e 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .conteudo-home {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10%;
+    text-align: center;
+  }
+  
+  .texto-esquerda,
+  .texto-direita {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .texto-esquerda {
+    font-size: 19px;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+}
+
+/* Para telas entre 992px e 1299px */
+@media (min-width: 992px) and (max-width: 1299px) {
+  .conteudo-home {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10%;
+    text-align: center;
+  }
+  
+  .texto-esquerda,
+  .texto-direita {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .texto-esquerda {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+}
+
+/* Para telas maiores que 1300px */
+@media (min-width: 1300px) {
+  .conteudo-home {
+    flex-direction: row;
+    align-items: center; /* Centraliza verticalmente todos os itens */
+    padding: 40px 8%;
+    text-align: left;
+  }
+  
+  .texto-esquerda {
+    width: 55%;
+    font-size: 20px;
+    padding-right: 40px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  .texto-direita {
+    width: 40%;
+    height: 100%;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    margin-bottom: 0;
+  }
+  
+  .texto-direita h2 {
+    width: 100%;
+  }
+  
+  .texto-direita a {
+    align-self: center; /* Centraliza o botão */
+  }
 }
