@@ -1,54 +1,169 @@
 footer {
-    background: #2D92EF;
-    color: white;
-    padding: 20px 0;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: fit-content;
-    box-sizing: border-box;
-    width: 100%; 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    }
-  
-  .footer-column {
-    flex: 1;
-    min-width: 250px;
-    margin-right: 100px;
-  }
-  
-.rodape-logo img {
-  height: 120px;
+  background: #2D92EF;
+  color: white;
+  padding: 20px 0;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative; /* Alterado de absolute para relative */
+  margin-top: auto; /* Isso ajuda a grudar no final da página */
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-home {
+  flex: 1;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.rodape-logo img {
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer-column h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.6;
+  display: block;
+  margin: 10px 0;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Responsividade */
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+  footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0;
+  }
+  
+  .footer-column {
+      flex: none;
+      width: 100%;
+      margin: 15px 0;
+  }
+  
   .footer-column h3 {
-    color: #ffffff;
-    margin-bottom: 5px;
+      font-size: 22px;
   }
   
-  .footer-column p,
-  .footer-column a {
-    color: white;
-    text-decoration: none;
-    line-height: 1.6;
-  }
-  
-  .footer-column a:hover {
-    text-decoration: underline;
+  .footer-column a,
+  .footer-column p {
+      font-size: 18px;
   }
   
   .social-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
+      justify-content: center;
   }
   
-  .social-item img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+  .rodape-logo img {
+      height: 100px;
   }
+}
+
+/* Para telas entre 600px e 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+  footer {
+      justify-content: center;
+      gap: 30px;
+  }
+  
+  .footer-column {
+      flex: none;
+      width: 80%;
+      margin: 10px 0;
+  }
+  
+  .rodape-logo img {
+      height: 110px;
+  }
+  
+  .footer-column h3 {
+      font-size: 20px;
+  }
+  
+  .footer-column a,
+  .footer-column p {
+      font-size: 18px;
+  }
+}
+
+/* Para telas entre 900px e 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+  footer {
+      padding: 20px 5%;
+  }
+  
+  .footer-column {
+      margin-right: 50px;
+  }
+  
+  .rodape-logo img {
+      height: 100px;
+  }
+  
+  .footer-column h3 {
+      font-size: 22px;
+  }
+  
+  .footer-column a,
+  .footer-column p {
+      font-size: 18px;
+  }
+}
+
+/* Para telas maiores que 1200px */
+@media (min-width: 1200px) {
+  footer {
+      padding: 20px 10%;
+  }
+  
+  .footer-column {
+      margin-right: 80px;
+  }
+}
