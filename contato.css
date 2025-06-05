@@ -4,111 +4,218 @@ body {
     background-size: cover;
     font-family: Arial, sans-serif;
     color: white;
+    margin: 0;
+    padding-top: 100px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin: 0px;
     background-attachment: fixed;
-    padding-top: 100px;
 }
 
 .contato-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 60px;
-    margin-left: 50px;
-    text-align: left;
-    position: relative;;
-    margin-bottom: 20px;
-    margin-top: 200px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.formulario,
-.informacoes {
-    flex: 1;
-    min-width: 300px;
+.formulario, .lado-direito {
+    width: 100%;
+    max-width: 100%;
 }
 
 .titulo-laranja {
     color: #80CC2B;
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .formulario form {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+    margin-top: 30px;
 }
 
 input, textarea {
-    padding: 14px 20px;
+    padding: 12px 15px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 16px;
     background-color: #e0e0e0;
     color: #333;
     resize: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 textarea {
-    height: 140px;
+    height: 120px;
 }
 
-button {
+button[type="submit"] {
     background-color: #80CC2B;
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 12px 25px;
     font-size: 18px;
     cursor: pointer;
-    width: 120px;
-}
-
-button:hover {
-    opacity: 0.9;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .lado-direito {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: center;
-    justify-content: center;
-    flex: 1;
-    min-width: 300px;
-    gap: 100px;
 }
 
 .botoes-acoes {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 20px;
+    width: 100%;
 }
 
 .botao-verde {
     background-color: #80CC2B;
     color: white;
     border: none;
-    border-radius: 12px;
-    padding: 12px 24px;
+    border-radius: 10px;
+    padding: 15px;
     cursor: pointer;
-    width: 360px;
+    width: 100%;
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
 }
 
-.botao-verde:hover {
-    opacity: 0.9;
+.informacoes {
+    text-align: center;
+    width: 100%;
 }
 
 .informacoes a {
-    color: #00BFFF; /* azul visível sobre fundo escuro */
+    color: #00BFFF;
     font-weight: bold;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 18px;
+}
+
+/* Responsividade */
+
+/* Telas pequenas (default já está configurado) */
+
+/* Telas médias (600px+) */
+@media (min-width: 600px) {
+    .contato-container {
+        padding: 30px;
+        margin-left: 30px;
+    }
+    
+    .titulo-laranja {
+        font-size: 36px;
+    }
+    
+    .botao-verde {
+        font-size: 20px;
+        padding: 18px;
+    }
+}
+
+/* Telas maiores (768px+) */
+@media (min-width: 768px) {
+    .contato-container {
+        padding: 40px;
+        margin-left: 30px;
+    }
+    
+    .titulo-laranja {
+        font-size: 38px;
+    }
+    
+    .formulario form {
+        gap: 25px;
+    }
+    
+    .botoes-acoes {
+        gap: 25px;
+    }
+}
+
+/* Telas grandes (992px+) */
+@media (min-width: 992px) {
+    .contato-container {
+        padding: 50px;
+        margin-left: 10px;
+    }
+    
+    .titulo-laranja {
+        font-size: 40px;
+    }
+    
+    input, textarea {
+        padding: 14px 20px;
+    }
+    
+    .botao-verde {
+        font-size: 22px;
+    }
+}
+
+/* Telas muito grandes (1300px+) - Layout original */
+@media (min-width: 1300px) {
+    .contato-container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 100px auto;
+        padding: 0 50px;
+        gap: 80px;
+    }
+    
+    .formulario, .lado-direito {
+        width: 48%;
+    }
+    
+    .titulo-laranja {
+        text-align: left;
+    }
+    
+    .formulario form {
+        margin-top: 50px;
+    }
+    
+    button[type="submit"] {
+        margin: 0;
+    }
+    
+    .lado-direito {
+        margin-top: 80px;
+        justify-content: flex-start;
+        gap: 100px;
+    }
+    
+    .botoes-acoes {
+        gap: 60px;
+    }
+    
+    .botao-verde {
+        width: 360px;
+        font-size: 28px;
+        padding: 12px 24px;
+    }
+    
+    .informacoes {
+        text-align: left;
+    }
+    
+    .informacoes a {
+        font-size: 30px;
+    }
 }
