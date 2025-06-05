@@ -104,12 +104,30 @@ form button {
 
 /* Responsividade */
 
-/* Telas pequenas (default já está configurado) */
+@media (max-width: 600px) {
+  .container {
+      padding: 30px;
+      margin-left: 20px;
+  }
+  
+  .formulario h1 {
+      font-size: 32px;
+  }
+  
+  form input, form button {
+      padding: 14px 20px;
+  }
+  
+  .dias, .datas {
+      gap: 15px;
+  }
+}
 
 /* Telas médias (600px+) */
 @media (min-width: 600px) {
   .container {
       padding: 30px;
+      margin-left: 20px;
   }
   
   .formulario h1 {
