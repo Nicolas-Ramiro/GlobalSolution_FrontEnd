@@ -6,22 +6,23 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  padding-top: 220px; /* para não cobrir pelo cabeçalho fixo */
+  padding-top: 200px;
 }
-  main {
-    text-align: left;
-  }
-  h1 {
-    color: #80CC2B;
-  }
+
+main {
+  text-align: left;
+}
+
+h1 {
+  color: #80CC2B;
+}
 
 .faq-container {
-  padding: 50px 20px;
-  max-width: 900px;
+  padding: 50px 5%;
+  max-width: 1200px;
   margin: 0 auto;
-  position: relative;;
+  position: relative;
   text-align: left;
-  margin-top: 160px;
 }
 
 .faq-container h1 {
@@ -50,6 +51,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
 }
 
 .faq-question:hover {
@@ -59,6 +61,8 @@ body {
 .faq-icon {
   font-size: 24px;
   transition: transform 0.3s ease;
+  margin-left: 15px;
+  flex-shrink: 0;
 }
 
 .faq-answer {
@@ -67,9 +71,103 @@ body {
   padding: 20px;
   font-size: 16px;
   color: #333;
-  width: 100%;;
+  width: 100%;
+}
+.faq-answer p{
+  width: 95%;
+  text-align: justify;
 }
 
 .faq-item.ativo .faq-answer {
   display: block;
+}
+
+/* Responsividade */
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+  body {
+    padding-top: 160px;
+  }
+  
+  .faq-container {
+    padding: 30px 15px;
+    margin-left: 30px;
+  }
+  
+  .faq-container h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .faq-question {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .faq-icon {
+    font-size: 20px;
+  }
+}
+
+/* Para telas entre 600px e 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  .faq-container {
+    padding: 40px 30px;
+    margin-left: 30px;
+  }
+  
+  .faq-container h1 {
+    font-size: 32px;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+  }
+}
+
+/* Para telas entre 768px e 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .faq-container {
+    padding: 50px 40px;
+  }
+  
+  .faq-container h1 {
+    font-size: 36px;
+  }
+}
+
+/* Para telas entre 992px e 1299px */
+@media (min-width: 992px) and (max-width: 1299px) {
+  .faq-container {
+    padding: 60px 50px;
+  }
+}
+
+/* Para telas maiores que 1300px */
+@media (min-width: 1300px) {
+  .faq-container {
+    padding: 70px 100px;
+  }
+  
+  .faq-item {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .faq-question {
+    font-size: 22px;
+    padding: 25px;
+  }
+  
+  .faq-answer {
+    font-size: 18px;
+    padding: 25px;
+  }
 }
