@@ -1,97 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resgate+ - Cadastro de vitima</title>
-        <link rel="stylesheet" href="Header.css">
-        <link rel="stylesheet" href="Footer.css">
-        <link rel="stylesheet" href="cadastro-vitima.css">
-    </head>
-    <body>
-        <div class="page-wrapper">
-            <header class="cabecalho">
-                <div class="logo">
-                    <img src="LogoResgate+.png" alt="Logo Resgate+">
-                </div>
-          
-                <!-- Botão do menu (aparece só em mobile) -->
-                <button class="menu-toggle" aria-label="Abrir menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-          
-                <!-- Navegação padrão (desktop) -->
-                <nav class="menu">
-                    <a href="home.html">Home</a>
-                    <a href="quemSomos.html">Quem Somos</a>
-                    <a href="faq.html">Faq</a>
-                    <a href="contato.html" class="ativo">Contato</a>
-                </nav>
-          
-                <!-- Sidebar responsiva (mobile) -->
-                <nav class="sidebar" id="sidebar">
-                    <a href="home.html">Home</a>
-                    <a href="quemSomos.html">Quem Somos</a>
-                    <a href="faq.html">Faq</a>
-                    <a href="contato.html" class="ativo">Contato</a>
-                </nav>
-          
-                <!-- Fundo escurecido ao abrir menu -->
-                <div class="overlay" id="overlay"></div>
-            </header>
-            <main>
-                <div class="form-container">
-                    <h1>Cadastro de vitima</h1>
-                    <p>Faça seu cadastro</p>
-                    <form id="form-vitima" class="form-grid">
-                        <div class="coluna-esquerda">
-                            <input type="text" name="nome" placeholder="Nome" required>
-                            <input type="email" name="email" placeholder="Email">
-                            <input type="text" name="telefone" placeholder="Telefone" required>
-                            <input type="number" name="idade" placeholder="Idade" required>
-                            <input type="text" name="local" placeholder="Local" required>
-                        </div>
-                        <div class="coluna-direita">
-                            <input type="text" name="ajuda" placeholder="Tipo de ajuda que necessita" required>
-                            <input type="text" name="saude" placeholder="Estado de saúde" required>
-                            <input type="text" name="abrigo" placeholder="Abrigo designado" required>
-                            <input type="text" name="status" placeholder="Status do resgate" required>
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </main>
-            <script src="cadastro-vitima.js"></script>
-            <script src="header.js"></script>
-            <footer>
-                <div class="footer-column">
-                    <div class="rodape-logo">
-                        <img src="Logo Resgate+ footer.png" alt="Logo Resgate+ Branco">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgate+ - Cadastro de vitima</title>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="cadastro-vitima.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="cabecalho">
+            <div class="logo">
+                <a href="home.html"><img src="LogoResgate+.png" alt="Logo Resgate+"></a>
+            </div>
+
+            <!-- Botão do menu (aparece só em mobile) -->
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navegação padrão (desktop) -->
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="quemSomos.html">Quem Somos</a>
+                <a href="faq.html">Faq</a>
+                <a href="contato.html" class="ativo">Contato</a>
+            </nav>
+
+            <!-- Sidebar responsiva (mobile) -->
+            <nav class="sidebar" id="sidebar">
+                <a href="home.html">Home</a>
+                <a href="quemSomos.html">Quem Somos</a>
+                <a href="faq.html">Faq</a>
+                <a href="contato.html" class="ativo">Contato</a>
+            </nav>
+
+            <!-- Fundo escurecido ao abrir menu -->
+            <div class="overlay" id="overlay"></div>
+        </header>
+        <main>
+            <div class="form-container">
+                <h1>Cadastro de vitima</h1>
+                <p>Faça seu cadastro</p>
+                <form id="form-vitima" class="form-grid">
+                    <div class="coluna-esquerda">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="telefone" placeholder="Telefone" required>
+                        <input type="number" name="idade" placeholder="Idade" required>
+                        <input type="text" name="local" placeholder="Local" required>
                     </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Contato</h3>
-                    <a href="mailto:resgatemais@gmail.com">resgatemais@gmail.com</a>
-                </div>
-      
-                <div class="footer-column">
-                    <h3>Redes Sociais</h3>
-                    <div class="social-item">
-                        <img src="linkedinLogo.webp" alt="LinkedIn">
-                        <a href="https://www.linkedin.com/in/hebert-lopes-36a3bb12a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Hebert</a>
+                    <div class="coluna-direita">
+                        <input type="text" name="ajuda" placeholder="Tipo de ajuda que necessita" required>
+                        <input type="text" name="saude" placeholder="Estado de saúde" required>
+                        <input type="text" name="abrigo" placeholder="Abrigo designado" required>
+                        <input type="text" name="status" placeholder="Status do resgate" required>
+                        <button type="submit">Enviar</button>
                     </div>
-                    <div class="social-item">
-                        <img src="linkedinLogo.webp" alt="LinkedIn">
-                        <a href="https://www.linkedin.com/in/marcus-vin%C3%ADcius-vila-nova-da-silva?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Marcus</a>
-                    </div>
-                    <div class="social-item">
-                        <img src="linkedinLogo.webp" alt="LinkedIn">
-                        <a href="https://www.linkedin.com/in/nicolas-ramiro-4a44bb346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolas</a>
-                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="cadastro-vitima.js"></script>
+        <script src="header.js"></script>
+        <footer>
+            <div class="footer-column">
+                <div class="rodape-logo">
+                    <img src="Logo Resgate+ footer.png" alt="Logo Resgate+ Branco">
                 </div>
-            </footer>
-        </div>  
-    </body>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <a href="mailto:resgatemais@gmail.com">resgatemais@gmail.com</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Redes Sociais</h3>
+                <div class="social-item">
+                    <img src="linkedinLogo.webp" alt="LinkedIn">
+                    <a
+                        href="https://www.linkedin.com/in/hebert-lopes-36a3bb12a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Hebert</a>
+                </div>
+                <div class="social-item">
+                    <img src="linkedinLogo.webp" alt="LinkedIn">
+                    <a
+                        href="https://www.linkedin.com/in/marcus-vin%C3%ADcius-vila-nova-da-silva?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Marcus</a>
+                </div>
+                <div class="social-item">
+                    <img src="linkedinLogo.webp" alt="LinkedIn">
+                    <a
+                        href="https://www.linkedin.com/in/nicolas-ramiro-4a44bb346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nicolas</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
