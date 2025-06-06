@@ -1,0 +1,238 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+              url('../img/fundo.png') no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.formulario, .lado-direito {
+    width: 100%;
+    max-width: 100%;
+}
+
+.titulo-laranja {
+    color: #80CC2B;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+input, textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    color: #333;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+}
+
+button[type="submit"] {
+    background-color: #80CC2B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.lado-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.botoes-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.botao-verde {
+    background-color: #80CC2B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.informacoes {
+    text-align: center;
+    width: 100%;
+}
+
+.informacoes a {
+    color: #00BFFF;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    .contato-container {
+        padding: 30px;
+        margin-left: 30px;
+        padding-top: 70px;
+    }
+    
+    .titulo-laranja {
+        font-size: 36px;
+    }
+    
+    .botao-verde {
+        font-size: 20px;
+        padding: 18px;
+    }
+}
+
+/* Telas médias (600px+) */
+@media (min-width: 600px) {
+    .contato-container {
+        padding: 30px;
+        margin-left: 30px;
+        padding-top: 70px;
+    }
+    
+    .titulo-laranja {
+        font-size: 36px;
+    }
+    
+    .botao-verde {
+        font-size: 20px;
+        padding: 18px;
+    }
+}
+
+/* Telas maiores (768px+) */
+@media (min-width: 768px) {
+    .contato-container {
+        padding: 40px;
+        margin-left: 30px;
+        padding-top: 70px;
+    }
+    
+    .titulo-laranja {
+        font-size: 38px;
+    }
+    
+    .formulario form {
+        gap: 25px;
+    }
+    
+    .botoes-acoes {
+        gap: 25px;
+    }
+}
+
+/* Telas grandes (992px+) */
+@media (min-width: 992px) {
+    .contato-container {
+        padding: 50px;
+        margin-left: 10px;
+    }
+    
+    .titulo-laranja {
+        font-size: 40px;
+    }
+    
+    input, textarea {
+        padding: 14px 20px;
+    }
+    
+    .botao-verde {
+        font-size: 22px;
+    }
+}
+
+/* Telas muito grandes (1300px+) - Layout original */
+@media (min-width: 1300px) {
+    .contato-container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 100px auto;
+        padding: 0 50px;
+        gap: 80px;
+    }
+    
+    .formulario, .lado-direito {
+        width: 48%;
+    }
+    
+    .titulo-laranja {
+        text-align: left;
+    }
+    
+    .formulario form {
+        margin-top: 50px;
+    }
+    
+    button[type="submit"] {
+        margin: 0;
+    }
+    
+    .lado-direito {
+        margin-top: 80px;
+        justify-content: flex-start;
+        gap: 100px;
+    }
+    
+    .botoes-acoes {
+        gap: 60px;
+    }
+    
+    .botao-verde {
+        width: 360px;
+        font-size: 28px;
+        padding: 12px 24px;
+    }
+    
+    .informacoes {
+        text-align: left;
+    }
+    
+    .informacoes a {
+        font-size: 30px;
+    }
+}

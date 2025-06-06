@@ -1,0 +1,222 @@
+body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('../img/fundo.png') no-repeat center center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding-top: 200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 40px;
+}
+
+.formulario, .calendario {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario h1 {
+  color: #80CC2B;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.formulario p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #80CC2B;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.calendario {
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.calendario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dias, .datas {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.dias div {
+  font-weight: bold;
+  color: #333;
+}
+
+.datas div {
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eee;
+  transition: all 0.2s ease;
+}
+
+.datas div:hover {
+  background-color: #ddd;
+}
+
+.datas div.selecionado {
+  background-color: #80CC2B;
+  color: white;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .container {
+      padding: 30px;
+      margin-left: 20px;
+  }
+  
+  .formulario h1 {
+      font-size: 32px;
+  }
+  
+  form input, form button {
+      padding: 14px 20px;
+  }
+  
+  .dias, .datas {
+      gap: 15px;
+  }
+}
+
+/* Telas médias (600px+) */
+@media (min-width: 600px) {
+  .container {
+      padding: 30px;
+      margin-left: 20px;
+  }
+  
+  .formulario h1 {
+      font-size: 32px;
+  }
+  
+  form input, form button {
+      padding: 14px 20px;
+  }
+  
+  .dias, .datas {
+      gap: 15px;
+  }
+}
+
+/* Telas maiores (768px+) */
+@media (min-width: 768px) {
+  .container {
+      padding: 40px;
+  }
+  
+  .formulario h1 {
+      font-size: 34px;
+  }
+  
+  .calendario {
+      padding: 25px;
+  }
+}
+
+/* Telas grandes (992px+) */
+@media (min-width: 992px) {
+  .container {
+      padding: 50px;
+  }
+  
+  .formulario h1 {
+      font-size: 36px;
+  }
+  
+  form {
+      gap: 20px;
+  }
+  
+  .dias, .datas {
+      gap: 20px;
+  }
+}
+
+/* Telas muito grandes (1300px+) - Layout original */
+@media (min-width: 1300px) {
+  body {
+      padding-top: 220px;
+  }
+  
+  .container {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 50px;
+      gap: 60px;
+      align-items: flex-start;
+  }
+  
+  .formulario {
+      width: 45%;
+  }
+  
+  .calendario {
+      width: 50%;
+      margin-top: 0;
+  }
+  
+  .formulario h1, .formulario p {
+      text-align: left;
+  }
+  
+  form button {
+      width: auto;
+      padding: 12px 30px;
+      align-self: flex-start;
+  }
+  
+  .dias, .datas {
+      gap: 25px;
+  }
+  
+  .datas div {
+      padding: 10px;
+  }
+}
